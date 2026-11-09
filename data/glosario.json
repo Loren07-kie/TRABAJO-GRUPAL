@@ -1,0 +1,72 @@
+{
+  "quechua": {
+    "nombre": "quechua",
+    "variante": "quechua sureño (Cusco/Ayacucho)",
+    "entradas": [
+      {
+        "es": "agua",
+        "nativo": "yaku",
+        "nota": "",
+        "verificado": false,
+        "fuente": "usuario"
+      },
+      {
+        "es": "casa",
+        "nativo": "wasi",
+        "nota": "",
+        "verificado": false,
+        "fuente": "usuario"
+      },
+      {
+        "es": "sol",
+        "nativo": "inti",
+        "nota": "",
+        "verificado": false,
+        "fuente": "usuario"
+      },
+      {
+        "es": "madre",
+        "nativo": "mama",
+        "nota": "",
+        "verificado": false,
+        "fuente": "usuario"
+      },
+      {
+        "es": "padre",
+        "nativo": "tayta",
+        "nota": "",
+        "verificado": false,
+        "fuente": "usuario"
+      },
+      {
+        "es": "gracias",
+        "nativo": "sulpayki",
+        "nota": "",
+        "verificado": false,
+        "fuente": "usuario"
+      }
+    ],
+    "oraciones": []
+  },
+  "ashaninka": {
+    "nombre": "asháninka",
+    "variante": "asháninka",
+    "entradas": [
+      {
+        "es": "suegr",
+        "nativo": "konki",
+        "nota": "habla de varón",
+        "verificado": false,
+        "fuente": "usuario"
+      }
+    ],
+    "oraciones": [
+      {
+        "nativo": "Itobakaakenabo konki meshiyanto",
+        "es": "Mi suegro me hizo tumbar el árbol de capirona.",
+        "verificado": false,
+        "fuente": "usuario"
+      }
+    ]
+  }
+}
