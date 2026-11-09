@@ -20,3 +20,5 @@ aside{box-shadow:0 8px 24px #6c543516;border:1px solid #dbcbb5}
 .viewer-controls{border:1px solid #d8ddca}.operator a{color:#285342}.directory h2 em{color:#ab513b}.offline h3{color:#184f43}
 footer .brand{color:#f3d9a0}footer .secondary{background:#f4ead4}
 @media(max-width:800px){.hero-photo{border-radius:75px 25px 60px 25px}.card{background:#fffdf5}.hero h1{font-size:68px}}
+
+#chat{max-height:calc(100dvh - 110px);overflow-y:auto}#chatExamples{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 12px}#chatExamples button{font:800 10px Nunito,Arial,sans-serif;color:#195343;background:#eef2e3;border:1px solid #bdccaf;border-radius:16px;padding:6px 9px;cursor:pointer}#chatExamples button:hover{background:#e1eacb}#languageNote{font-size:10px;line-height:1.4;margin:6px 0}#chat select{margin-bottom:3px}#messages{max-height:clamp(160px,27vh,260px)}

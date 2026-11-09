@@ -1,0 +1,627 @@
+{
+  "version": 1,
+  "method": "reference_examples_and_retrieval_not_model_fine_tuning",
+  "priorityLanguages": [
+    "es",
+    "ashaninka",
+    "quechua",
+    "en"
+  ],
+  "faqs": [
+    {
+      "id": "hello",
+      "questions": {
+        "es": [
+          "Hola",
+          "Buenos días"
+        ],
+        "en": [
+          "Hello",
+          "Hi"
+        ]
+      },
+      "answers": {
+        "es": "¡Hola! Puedo ayudarte con rutas, miradores, cataratas, fotos y el boletín de Satipo. ¿Qué te gustaría explorar?",
+        "en": "Hello! I can help you explore Satipo routes, viewpoints, waterfalls, photos and the visitor bulletin. What would you like to discover?"
+      },
+      "source": {
+        "title": "Funciones de la guía digital de Satipo",
+        "pages": []
+      }
+    },
+    {
+      "id": "viewpoints",
+      "questions": {
+        "es": [
+          "Mirador",
+          "¿Qué miradores puedo visitar?"
+        ],
+        "en": [
+          "Viewpoints",
+          "Which viewpoints can I visit?"
+        ]
+      },
+      "answers": {
+        "es": "El boletín incluye Mirador Cerro Satélite (Satipo, p. 2), Mirador San Juan Bautista (ruta Llaylla, p. 5) y Bosque de Piedras y Mirador El Waly (Pampa Hermosa, p. 8). Confirma el acceso con un operador local.",
+        "en": "The bulletin lists Mirador Cerro Satélite (Satipo, p. 2), Mirador San Juan Bautista (Llaylla route, p. 5), and Bosque de Piedras y Mirador El Waly (Pampa Hermosa, p. 8). Check current access with a local operator."
+      },
+      "source": {
+        "title": "Boletín Turístico 2025",
+        "pages": [
+          2,
+          5,
+          8
+        ]
+      }
+    },
+    {
+      "id": "waterfalls",
+      "questions": {
+        "es": [
+          "Cataratas",
+          "¿Qué cataratas puedo conocer?"
+        ],
+        "en": [
+          "Waterfalls",
+          "Which waterfalls can I visit?"
+        ]
+      },
+      "answers": {
+        "es": "Puedes consultar La Resistencia en la ruta Satipo (p. 2), Santa Clara en Llaylla (p. 5) y Gallito de las Rocas en Pampa Hermosa (p. 8). El boletín no confirma las condiciones actuales de acceso.",
+        "en": "Explore La Resistencia on the Satipo route (p. 2), Santa Clara in Llaylla (p. 5), and Gallito de las Rocas in Pampa Hermosa (p. 8). The bulletin does not confirm current access conditions."
+      },
+      "source": {
+        "title": "Boletín Turístico 2025",
+        "pages": [
+          2,
+          5,
+          8
+        ]
+      }
+    },
+    {
+      "id": "satipo-tour",
+      "questions": {
+        "es": [
+          "¿Qué incluye el tour Satipo?",
+          "Tour Satipo"
+        ],
+        "en": [
+          "What is included in the Satipo tour?",
+          "Satipo tour"
+        ]
+      },
+      "answers": {
+        "es": "La ruta publicada incluye Plaza de Armas, Petroglifos de Huanacaure, La Resistencia, Las Garzas, Parque Escultural El Águila, Cerro Satélite y una cafetería local. Puedes elegir las paradas en Explorar.",
+        "en": "The published route includes Plaza de Armas, Petroglifos de Huanacaure, La Resistencia, Las Garzas, Parque Escultural El Águila, Cerro Satélite and a local café. Choose your stops under Explorar."
+      },
+      "source": {
+        "title": "Boletín Turístico 2025",
+        "pages": [
+          2
+        ]
+      }
+    },
+    {
+      "id": "districts",
+      "questions": {
+        "es": [
+          "¿Qué distritos aparecen en el boletín?",
+          "Distritos"
+        ],
+        "en": [
+          "Which districts are in the bulletin?",
+          "Districts"
+        ]
+      },
+      "answers": {
+        "es": "El boletín presenta rutas de Satipo, Río Negro, Mazamari, Llaylla, Pangoa, Coviriali, Pampa Hermosa y Río Tambo.",
+        "en": "The bulletin presents routes for Satipo, Río Negro, Mazamari, Llaylla, Pangoa, Coviriali, Pampa Hermosa and Río Tambo."
+      },
+      "source": {
+        "title": "Boletín Turístico 2025",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "id": "maps",
+      "questions": {
+        "es": [
+          "¿Cómo sigo una ruta?",
+          "Google Maps"
+        ],
+        "en": [
+          "How do I follow a route?",
+          "Google Maps directions"
+        ]
+      },
+      "answers": {
+        "es": "Selecciona tus paradas en Explorar y pulsa Seguir en Google Maps. Los itinerarios largos se abren por tramos. Las búsquedas usan nombres de lugares; confirma el destino y los accesos antes de salir.",
+        "en": "Choose stops under Explorar and open Seguir en Google Maps. Longer itineraries open in sections. Searches use place names, so confirm the destination and access before travelling."
+      },
+      "source": {
+        "title": "Funciones de la guía digital de Satipo",
+        "pages": []
+      }
+    },
+    {
+      "id": "offline",
+      "questions": {
+        "es": [
+          "¿Funciona sin internet?",
+          "¿Cómo descargo la ruta?"
+        ],
+        "en": [
+          "Does it work offline?",
+          "How do I download a route?"
+        ]
+      },
+      "answers": {
+        "es": "Guarda la guía sin conexión y descarga el itinerario. El itinerario contiene paradas y enlaces, no un trazado GPS. Para navegar sin señal debes descargar también el mapa de la zona desde la app Google Maps. La conversación generativa necesita internet.",
+        "en": "Save the guide for offline use and download your itinerary. The itinerary contains stops and links, not a GPS track. For offline navigation, also download the area in the Google Maps app. Generative conversation needs internet."
+      },
+      "source": {
+        "title": "Funciones de la guía digital de Satipo",
+        "pages": []
+      }
+    },
+    {
+      "id": "photos",
+      "questions": {
+        "es": [
+          "¿Cómo guardo una foto en el mapa?",
+          "Fotos con GPS"
+        ],
+        "en": [
+          "How do I add a photo to the map?",
+          "GPS photos"
+        ]
+      },
+      "answers": {
+        "es": "En Mi mapa pulsa Foto con mi ubicación, permite el GPS y toma o elige una foto del lugar donde estás. La app usa la posición actual del dispositivo, no la ubicación histórica de una foto antigua.",
+        "en": "Under Mi mapa, select Foto con mi ubicación, allow GPS access and take or select a photo of your current location. The app uses your current device position, not the historical location of an old photo."
+      },
+      "source": {
+        "title": "Funciones de la guía digital de Satipo",
+        "pages": []
+      }
+    },
+    {
+      "id": "photo-storage",
+      "questions": {
+        "es": [
+          "¿Dónde se guardan mis fotos?",
+          "Privacidad de las fotos"
+        ],
+        "en": [
+          "Where are my photos stored?",
+          "Photo privacy"
+        ]
+      },
+      "answers": {
+        "es": "Las fotos se guardan en el navegador de este dispositivo. No se publican en una galería compartida. Puedes exportarlas o eliminarlas desde Mi mapa; no se sincronizan automáticamente con otros equipos.",
+        "en": "Photos stay in this device’s browser. They are not published to a shared gallery. You can export or delete them under Mi mapa; they do not automatically sync across devices."
+      },
+      "source": {
+        "title": "Funciones de la guía digital de Satipo",
+        "pages": []
+      }
+    },
+    {
+      "id": "operators",
+      "questions": {
+        "es": [
+          "¿Cómo contacto a un operador?",
+          "Agencias de turismo"
+        ],
+        "en": [
+          "How do I contact a tour operator?",
+          "Tour operators"
+        ]
+      },
+      "answers": {
+        "es": "El directorio de la web incluye contactos del boletín 2025, como Turismo Zumag Perú, El Tunche y Asiri Tours. Pulsa su número para llamar y confirma disponibilidad, tarifas y condiciones directamente.",
+        "en": "The website directory includes contacts from the 2025 bulletin, such as Turismo Zumag Perú, El Tunche and Asiri Tours. Tap a phone number to call and confirm availability, prices and conditions directly."
+      },
+      "source": {
+        "title": "Boletín Turístico 2025",
+        "pages": [
+          10
+        ]
+      }
+    },
+    {
+      "id": "coffee",
+      "questions": {
+        "es": [
+          "¿Dónde puedo tomar café?",
+          "Cafeterías"
+        ],
+        "en": [
+          "Where can I have coffee?",
+          "Coffee shops"
+        ]
+      },
+      "answers": {
+        "es": "La página 12 del boletín reúne cafeterías y pizzerías, entre ellas Café Satipo MQ, Cactus y Café y Cafetería Kava. Consulta los contactos de la página y confirma horarios actuales.",
+        "en": "Page 12 lists cafés and pizzerias, including Café Satipo MQ, Cactus y Café and Cafetería Kava. Check the page for contacts and confirm current opening hours."
+      },
+      "source": {
+        "title": "Boletín Turístico 2025",
+        "pages": [
+          12
+        ]
+      }
+    },
+    {
+      "id": "prices",
+      "questions": {
+        "es": [
+          "¿Cuánto cuesta el tour?",
+          "Precios"
+        ],
+        "en": [
+          "How much does the tour cost?",
+          "Prices"
+        ]
+      },
+      "answers": {
+        "es": "No tengo tarifas actuales verificadas. Consulta al operador elegido e indica las paradas, la fecha y cuántas personas viajarán. No puedo confirmar un precio a partir del boletín.",
+        "en": "I do not have verified current prices. Ask your chosen operator and provide your stops, travel date and group size. I cannot confirm a price from the bulletin."
+      },
+      "source": {
+        "title": "Funciones de la guía digital de Satipo",
+        "pages": []
+      }
+    },
+    {
+      "id": "hours",
+      "questions": {
+        "es": [
+          "¿A qué hora abren?",
+          "Horarios"
+        ],
+        "en": [
+          "What are the opening hours?",
+          "Opening hours"
+        ]
+      },
+      "answers": {
+        "es": "No tengo horarios actuales confirmados para los atractivos. Contacta al establecimiento o al operador antes de viajar.",
+        "en": "I do not have confirmed current opening hours for the attractions. Contact the venue or operator before travelling."
+      },
+      "source": {
+        "title": "Funciones de la guía digital de Satipo",
+        "pages": []
+      }
+    },
+    {
+      "id": "river",
+      "questions": {
+        "es": [
+          "¿Cómo es la ruta Río Tambo?",
+          "Ruta fluvial"
+        ],
+        "en": [
+          "What is the Río Tambo route like?",
+          "River route"
+        ]
+      },
+      "answers": {
+        "es": "La ruta Río Tambo del boletín incluye Puerto Ocopa y un paseo en bote hacia Betania. Coordina el transporte fluvial y el guía local: Google Maps no sustituye la organización de ese recorrido en bote.",
+        "en": "The bulletin’s Río Tambo route includes Puerto Ocopa and a boat trip towards Betania. Arrange river transport and a local guide; Google Maps does not replace planning the boat journey."
+      },
+      "source": {
+        "title": "Boletín Turístico 2025",
+        "pages": [
+          9
+        ]
+      }
+    },
+    {
+      "id": "languages",
+      "questions": {
+        "es": [
+          "¿Qué idiomas puedes usar?",
+          "Idiomas"
+        ],
+        "en": [
+          "Which languages do you support?",
+          "Languages"
+        ]
+      },
+      "answers": {
+        "es": "Puedes elegir español, inglés, asháninka y quechua, o detección automática. En las lenguas originarias uso expresiones y referencias disponibles; las traducciones extensas necesitan revisión por un hablante.",
+        "en": "Choose Spanish, English, Asháninka, Quechua or automatic detection. For Indigenous languages, I use available documented expressions and references; longer translations need review by a speaker."
+      },
+      "source": {
+        "title": "Funciones de la guía digital de Satipo",
+        "pages": []
+      }
+    },
+    {
+      "id": "identity",
+      "questions": {
+        "es": [
+          "¿Cómo te llamas?",
+          "¿Eres una persona?"
+        ],
+        "en": [
+          "What is your name?",
+          "Are you a person?"
+        ]
+      },
+      "answers": {
+        "es": "Soy la guía virtual de Satipo. Te ayudo a consultar el boletín y preparar un itinerario; no soy una persona ni un operador turístico.",
+        "en": "I am Satipo’s virtual guide. I help you consult the bulletin and plan an itinerary; I am not a person or a tour operator."
+      },
+      "source": {
+        "title": "Funciones de la guía digital de Satipo",
+        "pages": []
+      }
+    },
+    {
+      "id": "voice",
+      "questions": {
+        "es": [
+          "¿Puedes hablar en voz alta?",
+          "Pronunciación"
+        ],
+        "en": [
+          "Can you speak aloud?",
+          "Pronunciation"
+        ]
+      },
+      "answers": {
+        "es": "La lectura y el dictado están disponibles en español e inglés si el navegador los admite. No presento una voz española como pronunciación validada de asháninka o quechua.",
+        "en": "Reading aloud and dictation are available in Spanish and English when supported by your browser. I do not present a Spanish voice as validated Asháninka or Quechua pronunciation."
+      },
+      "source": {
+        "title": "Funciones de la guía digital de Satipo",
+        "pages": []
+      }
+    },
+    {
+      "id": "bulletin",
+      "questions": {
+        "es": [
+          "¿Dónde veo el boletín completo?",
+          "PDF original"
+        ],
+        "en": [
+          "Where can I read the full bulletin?",
+          "Original PDF"
+        ]
+      },
+      "answers": {
+        "es": "Abre Boletín 2025. Puedes recorrer sus 13 páginas, ampliar cada imagen o descargar el PDF original.",
+        "en": "Open Boletín 2025. Browse its 13 pages, enlarge a page image or download the original PDF."
+      },
+      "source": {
+        "title": "Funciones de la guía digital de Satipo",
+        "pages": []
+      }
+    }
+  ],
+  "phrases": [
+    {
+      "id": "ash-how",
+      "language": "ashaninka",
+      "question": "¿Jimpe pikantaka?",
+      "meaningEs": "¿Cómo estás?",
+      "nativeAnswer": "Nosaekati kametsa",
+      "answerEs": "Estoy bien.",
+      "source": {
+        "title": "MINSA · Palabras clave para la atención en salud: Asháninka",
+        "url": "https://cdn.www.gob.pe/uploads/document/file/315142/Palabras_clave_para_la_atenci%C3%B3n_en_salud__Ashaninka20190521-6322-1g0qnnb.pdf"
+      },
+      "page": 33,
+      "variant": "Expresiones publicadas por MINSA; confirmar adecuación local.",
+      "review": "documented_expression_local_review_pending"
+    },
+    {
+      "id": "ash-morning",
+      "language": "ashaninka",
+      "question": "Kitaeteri",
+      "meaningEs": "Buenos días",
+      "nativeAnswer": "Kitaeteri",
+      "answerEs": "Buenos días.",
+      "source": {
+        "title": "MINSA · Palabras clave para la atención en salud: Asháninka",
+        "url": "https://cdn.www.gob.pe/uploads/document/file/315142/Palabras_clave_para_la_atenci%C3%B3n_en_salud__Ashaninka20190521-6322-1g0qnnb.pdf"
+      },
+      "page": 33,
+      "variant": "",
+      "review": "documented_expression_local_review_pending"
+    },
+    {
+      "id": "ash-thanks",
+      "language": "ashaninka",
+      "question": "Pasonke",
+      "meaningEs": "Gracias",
+      "nativeAnswer": null,
+      "answerEs": "Gracias por tu mensaje. Puedo ayudarte a explorar Satipo o practicar una expresión documentada.",
+      "source": {
+        "title": "MINSA · Palabras clave para la atención en salud: Asháninka",
+        "url": "https://cdn.www.gob.pe/uploads/document/file/315142/Palabras_clave_para_la_atenci%C3%B3n_en_salud__Ashaninka20190521-6322-1g0qnnb.pdf"
+      },
+      "page": 33,
+      "variant": "",
+      "review": "documented_expression_local_review_pending"
+    },
+    {
+      "id": "ash-unknown",
+      "language": "ashaninka",
+      "question": "Te niyoti",
+      "meaningEs": "No sé",
+      "nativeAnswer": null,
+      "answerEs": "Entiendo la expresión «No sé». Podemos empezar con un saludo o una pregunta del boletín.",
+      "source": {
+        "title": "MINSA · Palabras clave para la atención en salud: Asháninka",
+        "url": "https://cdn.www.gob.pe/uploads/document/file/315142/Palabras_clave_para_la_atenci%C3%B3n_en_salud__Ashaninka20190521-6322-1g0qnnb.pdf"
+      },
+      "page": 33,
+      "variant": "",
+      "review": "documented_expression_local_review_pending"
+    },
+    {
+      "id": "ash-name",
+      "language": "ashaninka",
+      "question": "¿Jaoka pijitari?",
+      "meaningEs": "¿Cómo te llamas?",
+      "nativeAnswer": null,
+      "answerEs": "Me preguntas cómo me llamo. Soy la guía virtual de Satipo. Todavía no dispongo de una presentación completa revisada en esta variedad.",
+      "source": {
+        "title": "MINEDU · Manual de escritura Ashaninka (material del tutor)",
+        "url": "https://repositorio.minedu.gob.pe/handle/20.500.12799/10942"
+      },
+      "page": 40,
+      "variant": "",
+      "review": "documented_expression_local_review_pending"
+    },
+    {
+      "id": "ash-name-variant",
+      "language": "ashaninka",
+      "question": "¿Tsika pipaitaka?",
+      "meaningEs": "¿Cómo te llamas?",
+      "nativeAnswer": null,
+      "answerEs": "Me preguntas cómo me llamo. Soy la guía virtual de Satipo. El manual documenta esta variante de la pregunta.",
+      "source": {
+        "title": "MINEDU · Manual de escritura Ashaninka (material del tutor)",
+        "url": "https://repositorio.minedu.gob.pe/handle/20.500.12799/10942"
+      },
+      "page": 40,
+      "variant": "",
+      "review": "documented_expression_local_review_pending"
+    },
+    {
+      "id": "ash-going",
+      "language": "ashaninka",
+      "question": "¿Jaoka pijateri?",
+      "meaningEs": "¿Adónde vas?",
+      "nativeAnswer": null,
+      "answerEs": "Me preguntas adónde voy. Soy una guía virtual y puedo ayudarte a elegir una ruta de Satipo.",
+      "source": {
+        "title": "MINEDU · Manual de escritura Ashaninka (material del tutor)",
+        "url": "https://repositorio.minedu.gob.pe/handle/20.500.12799/10942"
+      },
+      "page": 44,
+      "variant": "Variante del río Tambo citada en el manual.",
+      "review": "documented_expression_local_review_pending"
+    },
+    {
+      "id": "ash-arrival",
+      "language": "ashaninka",
+      "question": "¿Jaoka ikarati pipokantari?",
+      "meaningEs": "¿Cuándo llegaste?",
+      "nativeAnswer": null,
+      "answerEs": "Me preguntas cuándo llegué. Soy un asistente virtual; puedo ayudarte a preparar tu visita.",
+      "source": {
+        "title": "MINEDU · Manual de escritura Ashaninka (material del tutor)",
+        "url": "https://repositorio.minedu.gob.pe/handle/20.500.12799/10942"
+      },
+      "page": 44,
+      "variant": "Variante del río Tambo citada en el manual.",
+      "review": "documented_expression_local_review_pending"
+    },
+    {
+      "id": "qu-hello",
+      "language": "quechua",
+      "question": "Imaynalla",
+      "meaningEs": "Saludo",
+      "nativeAnswer": "Imaynalla",
+      "answerEs": "Hola.",
+      "source": {
+        "title": "Ohio State University · Quechua, Chapter 1",
+        "url": "https://ohiostate.pressbooks.pub/quechua/chapter/chapter-1/"
+      },
+      "page": null,
+      "variant": "Quechua sureño: material introductorio; revisar adecuación a la comunidad.",
+      "review": "documented_expression_local_review_pending"
+    },
+    {
+      "id": "qu-how",
+      "language": "quechua",
+      "question": "¿Imaynalla kachkanki?",
+      "meaningEs": "¿Cómo estás?",
+      "nativeAnswer": "Ñuqaqa kusisqa kachkani.",
+      "answerEs": "Estoy feliz. Esta es una respuesta de práctica del material, no una emoción de una persona.",
+      "source": {
+        "title": "Ohio State University · Quechua, Chapter 1",
+        "url": "https://ohiostate.pressbooks.pub/quechua/chapter/chapter-1/"
+      },
+      "page": null,
+      "variant": "",
+      "review": "documented_expression_local_review_pending"
+    },
+    {
+      "id": "qu-name",
+      "language": "quechua",
+      "question": "¿Imataq sutiyki?",
+      "meaningEs": "¿Cómo te llamas?",
+      "nativeAnswer": null,
+      "answerEs": "Me preguntas mi nombre. Soy la guía virtual de Satipo; no dispongo todavía de una presentación completa revisada en quechua para esta aplicación.",
+      "source": {
+        "title": "Ohio State University · Quechua, Chapter 1",
+        "url": "https://ohiostate.pressbooks.pub/quechua/chapter/chapter-1/"
+      },
+      "page": null,
+      "variant": "",
+      "review": "documented_expression_local_review_pending"
+    },
+    {
+      "id": "qu-origin",
+      "language": "quechua",
+      "question": "¿Maymanta kanki?",
+      "meaningEs": "¿De dónde eres?",
+      "nativeAnswer": null,
+      "answerEs": "Me preguntas de dónde soy. Soy una guía virtual dedicada a Satipo; no soy una persona con un lugar de origen.",
+      "source": {
+        "title": "Ohio State University · Quechua, Chapter 1",
+        "url": "https://ohiostate.pressbooks.pub/quechua/chapter/chapter-1/"
+      },
+      "page": null,
+      "variant": "",
+      "review": "documented_expression_local_review_pending"
+    },
+    {
+      "id": "qu-goodbye",
+      "language": "quechua",
+      "question": "Tinkunakama",
+      "meaningEs": "Hasta luego",
+      "nativeAnswer": "Tinkunakama",
+      "answerEs": "Hasta luego.",
+      "source": {
+        "title": "Ohio State University · Quechua, Chapter 1",
+        "url": "https://ohiostate.pressbooks.pub/quechua/chapter/chapter-1/"
+      },
+      "page": null,
+      "variant": "",
+      "review": "documented_expression_local_review_pending"
+    },
+    {
+      "id": "qu-tomorrow",
+      "language": "quechua",
+      "question": "Q’ayakama",
+      "meaningEs": "Hasta mañana",
+      "nativeAnswer": "Q’ayakama",
+      "answerEs": "Hasta mañana.",
+      "source": {
+        "title": "Ohio State University · Quechua, Chapter 1",
+        "url": "https://ohiostate.pressbooks.pub/quechua/chapter/chapter-1/"
+      },
+      "page": null,
+      "variant": "",
+      "review": "documented_expression_local_review_pending"
+    }
+  ]
+}

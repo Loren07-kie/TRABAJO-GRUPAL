@@ -5,7 +5,7 @@ const originalFetch=globalThis.fetch;
 const env={GEMINI_API_KEY:'local-test-value',GEMINI_MODEL:'test-model'};
 let visitor=0;
 afterEach(()=>{globalThis.fetch=originalFetch});
-const request=(text='MIRADOR',language='es')=>new Request('https://satipo.test/api/chat',{method:'POST',headers:{'Content-Type':'application/json',Origin:'https://satipo.test','cf-connecting-ip':String(++visitor)},body:JSON.stringify({messages:[{role:'user',content:text}],language})});
+const request=(text='Busco miradores para mi visita',language='es')=>new Request('https://satipo.test/api/chat',{method:'POST',headers:{'Content-Type':'application/json',Origin:'https://satipo.test','cf-connecting-ip':String(++visitor)},body:JSON.stringify({messages:[{role:'user',content:text}],language})});
 const generated=text=>Response.json({candidates:[{content:{parts:[{text}]}}]});
 
 test('retries one temporary provider failure and returns the AI response',async()=>{
@@ -14,7 +14,7 @@ test('retries one temporary provider failure and returns the AI response',async(
  assert.equal(calls,2);assert.equal(res.status,200);assert.equal(data.mode,'ai');assert.match(data.answer,/mirador/);
 });
 
-test('persistent failure returns identified bulletin facts for MIRADOR',async()=>{
+test('persistent failure returns identified bulletin facts for a viewpoint query',async()=>{
  let calls=0;globalThis.fetch=async()=>{calls++;return new Response('',{status:503})};
  const res=await assistantAPI(request(),env),data=await res.json();
  assert.equal(calls,2);assert.equal(res.status,200);assert.equal(data.mode,'bulletin');

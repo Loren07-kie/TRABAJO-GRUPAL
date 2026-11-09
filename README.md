@@ -31,3 +31,5 @@ Los horarios, precios, contactos, accesos y ubicaciones precisas deben revisarse
 Faltan una administración compartida autenticada, almacenamiento compartido de fotos y validación cartográfica completa para convertir esta primera versión en un portal público administrado por varias personas.
 
 El asistente reintenta una vez los fallos temporales. Si persisten, puede mostrar coincidencias del boletín claramente identificadas como respuesta de respaldo, sin generación de IA. Las consultas sin coincidencias y los idiomas originarios conservan un error recuperable, sin inventar respuestas. Verificación: `npm test`.
+
+La ampliación multilingüe incorpora español, inglés, asháninka y quechua: 86 ejemplos de referencia, selector y detección básica de idioma. Las expresiones originarias conservan fuentes y su revisión local pendiente. Alcance y fuentes en IDIOMAS.md.
