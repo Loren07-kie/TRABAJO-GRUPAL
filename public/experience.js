@@ -1,0 +1,8 @@
+(()=>{
+const slides=[...document.querySelectorAll('.slide')],dots=[...document.querySelectorAll('.carousel-dots button')];let current=0,paused=matchMedia('(prefers-reduced-motion: reduce)').matches,timer;
+function show(index){current=(index+slides.length)%slides.length;slides.forEach((s,i)=>{s.classList.toggle('active',i===current);s.setAttribute('aria-hidden',String(i!==current))});dots.forEach((d,i)=>d.setAttribute('aria-current',String(i===current)))}
+function restart(){clearInterval(timer);if(!paused)timer=setInterval(()=>show(current+1),6000)}
+document.querySelector('#slidePrev').onclick=()=>{show(current-1);restart()};document.querySelector('#slideNext').onclick=()=>{show(current+1);restart()};dots.forEach((d,i)=>d.onclick=()=>{show(i);restart()});const pause=document.querySelector('#slidePause');function updatePause(){pause.textContent=paused?'Reproducir':'Pausar';pause.setAttribute('aria-label',paused?'Reproducir carrusel':'Pausar carrusel')};pause.onclick=()=>{paused=!paused;updatePause();restart()};updatePause();show(0);restart();document.addEventListener('visibilitychange',()=>{if(document.hidden)clearInterval(timer);else restart()});
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('main>section:not(.hero)').forEach(s=>{s.classList.add('reveal');observer.observe(s)});
+document.addEventListener('click',e=>{if(document.querySelector('[contenteditable="true"]')&&e.target.closest('[contenteditable="true"]')){e.preventDefault();e.stopPropagation()}},true);
+})();

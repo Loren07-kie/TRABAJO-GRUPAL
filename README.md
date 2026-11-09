@@ -16,7 +16,7 @@ Web turística basada en las 13 páginas del Boletín Turístico 2025 y en el pr
 
 `public/guide.html`, `public/style.css`, `public/app.js`: interfaz y mapa.
 
-`public/assistant.js`: conversación y voz. `lib/satipo-assistant.ts`: servidor de IA, validación de mensajes y límite básico por usuario/instancia. `data/`: material de consulta sin credenciales. `worker/index.ts`: integración del endpoint `/api/chat` con el servidor Sites.
+`public/assistant.js`: conversación y voz. `lib/satipo-assistant.ts`: fuente del asistente, validación de mensajes y límite básico por visitante/instancia. `data/`: material de consulta sin credenciales. `server.mjs`: servidor web y endpoint `/api/chat`. `server/assistant.mjs`: asistente compilado listo para Node.js.
 
 ## Configuración y publicación
 
