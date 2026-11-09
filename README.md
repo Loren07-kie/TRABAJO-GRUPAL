@@ -29,3 +29,5 @@ Ejecutar con Node.js 22 o posterior: `node server.mjs`. El servidor usa solament
 Los horarios, precios, contactos, accesos y ubicaciones precisas deben revisarse con el operador local antes del viaje. Río Tambo incluye transporte fluvial; Google Maps no calcula ese recorrido en bote. Las fotos guardan la ubicación actual, no extraen GPS de fotos antiguas. La precisión depende del celular. No hay límites geográficos oficiales cargados ni verificación automática de que una foto esté dentro de la provincia.
 
 Faltan una administración compartida autenticada, almacenamiento compartido de fotos y validación cartográfica completa para convertir esta primera versión en un portal público administrado por varias personas.
+
+El asistente reintenta una vez los fallos temporales. Si persisten, puede mostrar coincidencias del boletín claramente identificadas como respuesta de respaldo, sin generación de IA. Las consultas sin coincidencias y los idiomas originarios conservan un error recuperable, sin inventar respuestas. Verificación: `npm test`.

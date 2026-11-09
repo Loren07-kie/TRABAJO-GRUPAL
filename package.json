@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "node server.mjs",
-    "build": "node --check server.mjs && node --check server/assistant.mjs"
+    "build": "node --check server.mjs && node --check server/assistant.mjs",
+    "test": "node --test tests/assistant-recovery.test.mjs"
   }
 }
