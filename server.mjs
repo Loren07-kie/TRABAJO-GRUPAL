@@ -20,7 +20,7 @@ const server=http.createServer(async(req,res)=>{
   let relative=decodeURIComponent(url.pathname);if(['/', '/guide','/guide.html'].includes(relative))relative='/guide.html';
   const filename=path.resolve(root,'.'+relative);if(!filename.startsWith(root+path.sep)&&filename!==path.join(root,'guide.html')){res.writeHead(403);res.end();return}
   const info=await stat(filename);if(!info.isFile())throw Error('not-file');
-  res.setHeader('Content-Type',types[path.extname(filename)]||'application/octet-stream');res.setHeader('Content-Length',info.size);res.setHeader('Cache-Control',filename.endsWith('sw.js')?'no-cache':'public, max-age=300');if(req.method==='HEAD'){res.end();return}createReadStream(filename).on('error',()=>res.destroy()).pipe(res);
+  res.setHeader('Content-Type',types[path.extname(filename)]||'application/octet-stream');res.setHeader('Content-Length',info.size);res.setHeader('Cache-Control',(filename.endsWith('sw.js')||filename.endsWith('.html'))?'no-cache':'public, max-age=300');if(req.method==='HEAD'){res.end();return}createReadStream(filename).on('error',()=>res.destroy()).pipe(res);
  }catch{if(!res.headersSent)res.writeHead(404,{'Content-Type':'text/plain; charset=utf-8'});res.end('No encontrado.');}
 });
 server.requestTimeout=60000;server.headersTimeout=15000;server.listen(Number(process.env.PORT)||10000,'0.0.0.0',()=>console.log('Satipo: servidor listo.'));
